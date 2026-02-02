@@ -1,13 +1,12 @@
 /* CSS BY Leanna Bonalba*/
 
 /* IMPORTED FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-
 
 /* CSS RESET */
 html, body, div, span, applet, object, iframe,
@@ -30,43 +29,44 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 1;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
 /* ROOT VARIABLES */
+    :root {
+        --teal: #4CA7C0;
+        --purple: #484FB7;
+        --lavender: #6B8FE7;
+        --yellow:#E9BB57;
+        --pink: #D9526F;
+        --dark-gray: #1E1E1E;
+        --white: #FFFFFF;
 
-:root {
-    --teal: #4CA7C0;
-    --purple: #484FB7;
-    --lavender: #6B8FE7;
-    --yellow:#E9BB57;
-    --pink: #D9526F;
-    --dark-gray: #1E1E1E;
-    --white: #FFFFFF;
-
-    --font: 'Inter', sans-serif;
-    --font-heading: 'Kavoon', cursive;
-}
+        --font: 'Inter', sans-serif;
+        --font-heading: 'Kavoon', cursive;
+    }
 
 /* GLOBAL STYLES (mobile first/small) */
 
@@ -74,21 +74,18 @@ h1, h2 {
     font-family: var(--font-heading);
 }
 
-* {
-    box-sizing: border-box;
-    font-family: var(--font);
-}
 body {
     background-color: var(--lavender);
     color: var(--white); /*CHANGE LATER AFTER BG SET FOR SECTIONS*/
+    width: 50%; /* sets a max width for mobilefirst/small size*/
+    margin-left: auto;
+    margin-right: auto;
+    font-family: var(--font);
 }
 
+/* HEADING SIZES*/
 h1 {
     font-size: 3em;
-}
-
-nav h2 {
-    font-size: 1.5em;
 }
 
 h2 {
@@ -99,6 +96,71 @@ h3 {
     font-size: 1.5em;
 }
 
-h4{
+h4 {
     font-size: 1.15em;
 }
+
+header {
+    text-align: center;
+    background-color: var(--purple);
+    padding: 20px;
+}
+
+/* NAVIGATION STYLES */
+    nav {
+        font-family: var(--font);
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-align: center;
+        background-color: var(--yellow);
+    }
+
+    nav h2 {
+        font-family: var(--font);
+        font-size: 1.5em;
+        color: var(--dark-gray);
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    .nav-list li {
+        margin: 10px 20px;
+        padding: 15px;
+        background-color: var(--white);
+    }
+
+    .nav-list li a {
+        text-decoration: none;
+        font-weight: bold;
+
+        text-transform: uppercase;
+    }
+
+ /* SERVICES SECTION */
+    #services {
+        background-color: var(--purple);
+        padding: 20px;
+        text-align: left;
+    }
+
+    #services h3 {
+        color: var(--yellow);
+        font-weight: bold;
+        margin: 10px 0 10px 0;
+    }
+    #services h4 {
+        margin: 10px 0 10px 0;  
+        font-weight: bold;
+        color: var(--purple);
+
+    }
+
+    #services section > section {
+        margin-bottom: 15px;
+        background-color: var(--white);
+        border-radius: 10px;
+        padding: 20px;
+        
+        color: var(--dark-gray);
+    }
+
