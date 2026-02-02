@@ -81,6 +81,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     font-family: var(--font);
+
+    line-height: 1.6;
 }
 
 /* HEADING SIZES*/
@@ -164,3 +166,126 @@ header {
         color: var(--dark-gray);
     }
 
+/* WHY CHOOSE US SECTION */
+    #why-choose-us {
+        background-color: var(--pink);
+        padding: 20px;
+    }
+
+    #why-choose-us ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 0;
+    margin-top: 1rem;
+    }
+
+    #why-choose-us li {
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: var(--dark-gray);
+    font-weight: 600;
+    text-align: center;
+    }
+
+    /* Individual box colors */
+    #why-choose-us li:nth-child(1) {
+    background-color: var(--teal);
+    }
+
+    #why-choose-us li:nth-child(2) {
+    background-color: var(--lavender);
+    }
+
+    #why-choose-us li:nth-child(3) {
+    background-color: var(--yellow);
+    }
+
+    #why-choose-us li:nth-child(4) {
+    background-color: var(--white);
+    }
+
+/* PRICES SECTION */
+
+    #prices {
+        background-color: var(--purple);
+        padding: 20px;
+        }
+    #prices h3 {
+        color: var(--yellow);
+        font-weight: bold;
+        margin: 10px 0 10px 0;
+
+
+    }
+
+    #prices table {
+        margin: 0 auto;
+        width: 65%;
+        border: 3px solid var(--yellow);
+        background-color: var(--white);
+        color: var(--dark-gray);
+        
+    }
+
+    #prices th, #prices td {
+        padding: 20px;
+        border: 1px solid var(--yellow);
+
+        text-align: left;
+
+        vertical-align: middle;    
+    }   
+
+    #prices th {
+        background-color: var(--yellow);
+        font-weight: bold;
+        color: var(--dark-gray);
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+
+    /*Take the First Step SECTION */
+
+    #take-the-first-step {
+        background-color: var(--pink);
+        padding: 20px;
+        text-align: left;
+    }
+
+    #take-the-first-step a {
+        display: inline-block;
+        width: 80%;
+
+        transform: translateX(20px); /*centers the button*/
+
+        margin: 10px;
+        padding: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        align-items: center;
+
+        background-color: var(--white);
+        color: var(--dark-gray);
+
+        border-radius: 10px;
+
+        box-shadow: 0 4px 0 rgba(0, 0, 0, 1);
+    }
+
+    /* footer */
+
+    footer {
+        background-color: var(--purple);
+        color: var(--white);
+
+    
+        text-align: center;
+        padding: 50px;
+    }
+
+    footer a {
+        color: var(--white);
+        text-decoration: none;
+    }
