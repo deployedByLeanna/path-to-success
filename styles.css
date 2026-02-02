@@ -75,9 +75,9 @@ h1, h2 {
 }
 
 body {
+    max-width: 450px;
     background-color: var(--lavender);
     color: var(--white); /*CHANGE LATER AFTER BG SET FOR SECTIONS*/
-    width: 50%; /* sets a max width for mobilefirst/small size*/
     margin-left: auto;
     margin-right: auto;
     font-family: var(--font);
